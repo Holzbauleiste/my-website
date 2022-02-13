@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Panettone;
+  src: url(assets/Panettone.otf);
+}
+@font-face {
+  font-family: Barcadbold;
+  src: url(assets/barcadbold.ttf);
+}
+
+.full-pagecointainer {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	overflow-x: scroll;
+	background-color: lightblue;
+	overflow: hidden
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	overflow: auto;
+	margin: 0;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.pagecontainer {
+	min-width: 100vw;
+	height: 100%;
+	background-color: red;
+}
+
+.cool {
+	width: 800px;
+}
+
+.metainfo {
+	background-color: #000040;
+	width: 2000px;
+}
+
+.end {
+	background-color: darkgreen;
+	width: 500px;
+}
