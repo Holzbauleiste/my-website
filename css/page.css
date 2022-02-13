@@ -13,7 +13,6 @@
 	display: flex;
 	flex-flow: row nowrap;
 	overflow-x: scroll;
-	background-color: lightblue;
 	overflow: hidden
 }
 
@@ -39,7 +38,8 @@ body {
 }
 
 .metainfo {
-	background-color: #000040;
+	background: rgb(0,0,64);
+	background: linear-gradient(27deg, rgba(0,0,64,1) 0%, rgba(6,36,107,1) 50%, rgba(0,0,64,1) 100%);
 	width: 2000px;
 }
 
