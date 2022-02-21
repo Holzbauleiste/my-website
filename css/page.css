@@ -215,8 +215,9 @@ body {
 
 .getintouch-heading {
 	font-size: 3rem;
+	height: 100%;
+	margin-top: 25%;
 	text-align: center;
-	margin-top: 5rem;
 	color: white;
 	font-family: "Source Code Pro" 'monospace;';
 	font-weight: 600;
