@@ -1,56 +1,103 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <script type="text/javascript" src="lib/rainbowvis.js" defer></script>
-    <script type="text/javascript" src="lib/progressbar.min.js" defer></script>
-    <script type="text/javascript" src="js/progressbar.js" defer></script>
-    <script type="text/javascript" src="js/scroll.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="css/progressbar.css">
-    <link rel="stylesheet" type="text/css" href="css/profile.css">
-    <link rel="stylesheet" type="text/css" href="css/page.css">
-    
+	<script type="text/javascript" src="lib/rainbowvis.js" defer></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/typed.min.js"></script>
+	<script type="text/javascript" src="lib/progressbar.min.js"></script>
+	<script type="text/javascript" src="js/progressbar.js" defer></script>
+	<script type="text/javascript" src="js/scroll.js" defer></script>
+	<script type="text/javascript" src="js/animation-trigger.js" defer></script>
+	<script type="text/javascript" src="js/typed-text.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="css/progressbar.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax.css">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<script type="text/javascript">
+		
+	</script>
 </head>
-
-    <div class="full-pagecointainer" id="page">
-        <div class="pagecontainer metainfo">
-            <div class="profile-area">
-                <img class="profile-picture" src="assets/me.png">
-                <div class="profile-header profile-font">
-                    Levi Wöginger
-                </div>
-                <div class="profile-occupation profile-font">
-                    Full Stack Developer
-                </div>
-                <div class="social-container">
-                    <img class="social-icon" src="assets/email.png">
-                    <img class="social-icon" src="assets/github.png">
-                    <img class="social-icon" src="assets/twitter.png">
-                </div>
-            </div>
-        </div>
-        <div class="pagecontainer cool">
-            <div id="container"></div>
-        </div>
-        <div class="pagecontainer cool">
-            <div id="container"></div>
-        </div>
-        <div class="pagecontainer cool">
-            <div id="container"></div>
-        </div>
-        <div class="pagecontainer cool">
-            <div id="container"></div>
-        </div>
-        <div class="pagecontainer cool">
-            <div id="container"></div>
-        </div>
-        <div class="pagecontainer end">
-            <div id="container"></div>
-        </div>
-
-    </div>
-    <div id="scrollbar-container"></div>
-
-
-
-
+<body>
+	<div class="parallax-mirror">
+		<img class="parallax-img" src="assets/trash.png" style="">
+	</div>
+	<div class="full-pagecointainer" id="page">
+		<div class="pagecontainer metainfo">
+			<div class="profile-area">
+				<img class="profile-picture" src="assets/me.png">
+				<div class="profile-header profile-font">
+					Levi Wöginger
+				</div>
+				<div class="profile-occupation profile-font">
+					<div id="typed"></div>
+				</div>
+				<div class="social-container">
+					<a href="mailto:florin@woeginger.de">
+						<img class="social-icon" src="assets/email.png">
+					</a>
+					<a href="https://github.com/holzbauleiste">
+						<img class="social-icon" src="assets/github.png">
+					</a>
+					<a href="https://twitter.com/holzbauleiste">
+						<img class="social-icon" src="assets/twitter.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="pagecontainer background-slide">
+			<div class="parallax-container" data-parallax="scroll" data-image-src="assets/trash.png">
+			</div>
+			<div class="technology-container">
+				<p class="technology-header">I'm working with:</p>
+				<table class="stack-table">
+					<tr class="item-row">
+						<th class="stack-item col1">
+							<img class="technology-img" src="assets/technologies/flask.png">
+							<p class="stack-subtitle">Flask</p>
+						</th>
+						<th class="stack-item col2">
+							<img class="technology-img" src="assets/technologies/django.png">
+							<p class="stack-subtitle">Django</p>
+						</th>
+						<th class="stack-item col3">
+							<img class="technology-img" src="assets/technologies/react.png">
+							<p class="stack-subtitle">React</p>
+						</th>
+					</tr>
+					<tr class="item-row">
+						<th class="stack-item col1">
+							<img class="technology-img" src="assets/technologies/git.png">
+							<p class="stack-subtitle">Git</p>
+						</th>
+						<th class="stack-item col2">
+							<img class="technology-img" src="assets/technologies/kubernetes.png">
+							<p class="stack-subtitle">Docker /Kubernetes</p>
+						</th>
+						<th class="stack-item col3">
+							<img class="technology-img" src="assets/technologies/vuejs.png">
+							<p class="stack-subtitle">Vue.js</p>
+						</th>
+					</tr>
+					<tr class="item-row">
+						<th class="stack-item col1">
+							<img class="technology-img" src="assets/technologies/css-javascript-html.png">
+							<p class="stack-subtitle">CSS / Javascript</p>
+						</th>
+						<th class="stack-item col2">
+							<img class="technology-img" src="assets/technologies/postgresql.png">
+							<p class="stack-subtitle">PostgreSQL</p>
+						</th>
+						<th class="stack-item col3">
+							<img class="technology-img" src="assets/technologies/angularjs.png">
+							<p class="stack-subtitle">Angular.js</p>
+						</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="pagecontainer getintouch">
+			<p class="getintouch-heading">Get in Touch with me...</p>
+		</div>
+	</div>
+	<div id="scrollbar-container"></div>
+</body>
 </html>

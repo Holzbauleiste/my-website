@@ -1,0 +1,1 @@
+$('.parallax-container').parallax({imageSrc: 'assets/parra.jpg'});
